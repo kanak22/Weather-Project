@@ -1,0 +1,13 @@
+  <%- include("partials/header"); -%>
+
+    <h1 class="heading">Weather conditions</h1>
+
+  <div class="container my-4">
+    <h3 class="desc">The weather description is <%= description %><br /> The temprature of <%= City %> is <%= Temp %> degrees celsius</h3>
+    <img class="icon" src="<%= url %>" alt="">
+    <form action="/">
+      <button class="btn btn-lg" type="submit">Try another City</button>
+    </form>
+  </div>
+
+  <%- include("partials/footer"); -%>
